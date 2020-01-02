@@ -23,3 +23,32 @@ class Asteroid:
         self.asteroid = asteroid
         self.speed = speed
 
+
+def make_spaceship (screen, x, y):
+    # Ship Body
+    pygame.draw.ellipse(screen, DARKGRAY, (x+5, y, 90, 60))
+    pygame.draw.ellipse(screen, LIGHTGRAY, (x, y, 100, 50))
+
+    # Red Dots
+    pygame.draw.ellipse(screen, RED, (x+45, y+36, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+23, y+32, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+67, y+32, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+7, y+20, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+83, y+20, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+18, y+6, 10, 10))
+    pygame.draw.ellipse(screen, RED, (x+72, y+6, 10, 10))
+
+    # Ship Cabin
+    pygame.draw.ellipse(screen, BLUE, (x+20, y-10, 60, 45))
+
+    # Alien
+    pygame.draw.line(screen, GREEN, (x+45, y+32), (x+48, y+10), 5)
+    pygame.draw.line(screen, GREEN, (x+55, y+32), (x+58, y+10), 5)
+    pygame.draw.ellipse(screen, WHITE, (x+43, y, 10, 15))
+    pygame.draw.ellipse(screen, WHITE, (x+53, y, 10, 15))
+    pygame.draw.ellipse(screen, BLACK, (x+46, y+3, 5, 8))
+    pygame.draw.ellipse(screen, BLACK, (x+56, y+3, 5, 8))
+
+    # Dimensions
+    # Width: 100px; Height: 60px
+
