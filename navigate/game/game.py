@@ -1,5 +1,5 @@
 import pygame
-from navigate import navigate.objecs.objects.colors as colors
+from navigate.objecs.objects import *
 # ================================================= INSTANCE VARIABLES ================================================*
 
 
@@ -49,17 +49,6 @@ font3 = pygame.font.SysFont('Georgia', 15, True, False)
 
 # ====================================================== CLASSES ======================================================*
 
-class Asteroid:
-    def __init__(self, x, y, direction, left_bound, right_bound, top_bound, bottom_bound, asteroid, speed):
-        self.x = x
-        self.y = y
-        self.direction = direction
-        self.left_bound = left_bound
-        self.right_bound = right_bound
-        self.top_bound = top_bound
-        self.bottom_bound = bottom_bound
-        self.asteroid = asteroid
-        self.speed = speed
 
     def move(self):
         """
